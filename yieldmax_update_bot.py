@@ -5,7 +5,8 @@ import yfinance as yf
 import requests
 from datetime import datetime
 
-TELEGRAM_TOKEN = "7677530378:AAFh8Dr-ntkq4DmRH1NIbO_DzK_WODBSC9Y"
+import os
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 TELEGRAM_USER_ID = "saynull"
 SHEET_NAME = "YieldMax_고배당_모니터링"
 
